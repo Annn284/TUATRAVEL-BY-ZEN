@@ -1,1 +1,168 @@
+/* TUATRAVEL - Custom Styles & Animations */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Montserrat:wght@600;700;800;900&display=swap');
+
+:root {
+  --color-primary: #12A8C7;
+  --color-primary-dark: #075B78;
+  --color-primary-light: #44C7E3;
+  --color-bg-light: #F4FAFC;
+  --color-accent-orange: #FF6B4A;
+  --color-accent-gold: #F59E0B;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+h1, h2, h3, .font-heading {
+  font-family: 'Montserrat', 'Be Vietnam Pro', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #12A8C7;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #075B78;
+}
+
+/* Glassmorphism Classes */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(18, 168, 199, 0.15);
+}
+
+.glass-nav-transparent {
+  background: rgba(7, 91, 120, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.glass-card-dark {
+  background: rgba(7, 91, 120, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Subtle Shimmer & Glow */
+.glow-primary {
+  box-shadow: 0 10px 30px -10px rgba(18, 168, 199, 0.45);
+}
+
+.glow-orange {
+  box-shadow: 0 10px 30px -10px rgba(255, 107, 74, 0.45);
+}
+
+/* Floating animation */
+@keyframes floatAnim {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: floatAnim 4s ease-in-out infinite;
+}
+
+/* Pulse animation for CTA phone */
+@keyframes pulseSubtle {
+  0% {
+    box-shadow: 0 0 0 0 rgba(18, 168, 199, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(18, 168, 199, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(18, 168, 199, 0);
+  }
+}
+
+.animate-pulse-ring {
+  animation: pulseSubtle 2s infinite;
+}
+
+/* Image zoom effect on hover */
+.card-zoom {
+  overflow: hidden;
+}
+.card-zoom img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-zoom:hover img {
+  transform: scale(1.08);
+}
+
+/* Gradient text utility */
+.text-gradient-ocean {
+  background: linear-gradient(135deg, #12A8C7 0%, #075B78 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #FF6B4A 0%, #F59E0B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Accordion Smooth Transition */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
+}
+
+.accordion-item.active .accordion-content {
+  opacity: 1;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+/* Badge pulse */
+.badge-live {
+  position: relative;
+}
+.badge-live::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.4);
+  animation: liveBlink 1.5s infinite;
+}
+
+@keyframes liveBlink {
+  0%, 100% { opacity: 1; transform: translateY(-50%) scale(1); }
+  50% { opacity: 0.4; transform: translateY(-50%) scale(1.2); }
+}
 
