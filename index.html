@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TUATRAVEL – Chạm Hành Trình, Trọn Cảm Xúc! | Du Lịch Việt Nam Uy Tín</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="TUATRAVEL - Dịch vụ du lịch trong nước Việt Nam trẻ trung, năng động, thân thiện. Khám phá biển đảo Phú Quốc, săn mây Sa Pa, di sản Ninh Bình và miền Tây sông nước với chi phí minh bạch, lịch trình rõ ràng.">
+  <meta name="keywords" content="TUATRAVEL, du lịch Việt Nam, tour Phú Quốc, tour Sa Pa, tour Ninh Bình, tour Miền Tây, du lịch giá rẻ, tour du lịch trong nước">
+  <meta name="author" content="TUATRAVEL BY ZEN">
+  <meta property="og:title" content="TUATRAVEL – Chạm Hành Trình, Trọn Cảm Xúc!">
+  <meta property="og:description" content="Việt Nam có muôn vàn điều thú vị đang chờ bạn khám phá. Cùng TUATRAVEL bắt đầu hành trình mới với lịch trình rõ ràng, giá minh bạch và trải nghiệm đỉnh cao!">
+  <meta property="og:image" content="assets/images/tour-bien-dao.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            tua: {
+              ocean: '#12A8C7',
+              navy: '#075B78',
+              deep: '#043445',
+              light: '#F4FAFC',
+              sky: '#E0F4F9',
+              coral: '#FF6B4A',
+              gold: '#F59E0B'
+            }
+          },
+          fontFamily: {
+            sans: ['"Be Vietnam Pro"', 'sans-serif'],
+            heading: ['Montserrat', '"Be Vietnam Pro"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-tua-light text-slate-800 antialiased font-sans selection:bg-tua-ocean selection:text-white">
+
+  <!-- ========================================================================= -->
+  <!-- NAVIGATION BAR (STICKY & GLASSMORPHISM)                                   -->
+  <!-- ========================================================================= -->
+  <header id="main-navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-nav-transparent py-3">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        
+        <!-- Brand Logo & Wordmark -->
+        <a href="#hero" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-white p-1 shadow-md border border-tua-ocean/20 flex items-center justify-center overflow-hidden transition-transform duration-300 group-hover:scale-105">
+            <img src="assets/images/logo.jpg" alt="TUATRAVEL Logo" class="w-full h-full object-contain">
+          </div>
+          <div class="flex flex-col">
+            <span class="font-heading font-black text-xl sm:text-2xl tracking-wider text-white drop-shadow-sm group-hover:text-tua-ocean transition-colors">
+              TUA<span class="text-tua-ocean">TRAVEL</span>
+            </span>
+            <span class="text-[10px] sm:text-xs text-cyan-200 tracking-widest font-medium uppercase drop-shadow-sm hidden sm:block">
+              Chạm hành trình, trọn cảm xúc!
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="#hero" class="nav-link-item text-white hover:text-cyan-300 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-tua-ocean after:transition-all">Trang chủ</a>
+          <a href="#about" class="nav-link-item text-white hover:text-cyan-300 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-tua-ocean after:transition-all">Về chúng tôi</a>
+          <a href="#tours" class="nav-link-item text-white hover:text-cyan-300 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-tua-ocean after:transition-all">Khám phá tour</a>
+          <a href="#offer" class="nav-link-item text-white hover:text-cyan-300 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-tua-ocean after:transition-all">Ưu đãi & Đặt tour</a>
+          <a href="#faq" class="nav-link-item text-white hover:text-cyan-300 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-tua-ocean after:transition-all">FAQ</a>
+          <a href="#contact" class="nav-link-item text-white hover:text-cyan-300 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-tua-ocean after:transition-all">Liên hệ</a>
+        </nav>
+
+        <!-- Right CTA Phone & Booking Action -->
+        <div class="hidden lg:flex items-center gap-4">
+          <a href="tel:19001234" class="flex items-center gap-2.5 text-white bg-white/10 hover:bg-white/20 border border-white/20 px-3.5 py-2 rounded-full text-xs font-semibold backdrop-blur transition-all">
+            <span class="w-6 h-6 rounded-full bg-tua-ocean flex items-center justify-center text-white text-[11px] animate-pulse">
+              <i class="fa-solid fa-phone"></i>
+            </span>
+            <span>Hotline: <strong class="text-cyan-300 text-sm">1900 1234</strong></span>
+          </a>
+          <a href="#booking" class="bg-gradient-to-r from-tua-ocean to-cyan-500 hover:from-cyan-500 hover:to-tua-ocean text-white font-bold text-xs uppercase px-5 py-2.5 rounded-full shadow-lg glow-primary transition-all duration-300 transform hover:-translate-y-0.5">
+            Tư vấn ngay
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex items-center gap-3 md:hidden">
+          <a href="tel:19001234" class="w-9 h-9 rounded-full bg-tua-ocean text-white flex items-center justify-center text-sm shadow">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+          <button id="mobile-menu-btn" class="text-white p-2 text-xl focus:outline-none" aria-label="Mở menu">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer & Overlay -->
+  <div id="mobile-menu-backdrop" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden transition-opacity"></div>
+  <div id="mobile-menu-drawer" class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col justify-between p-6">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-gray-100">
+        <div class="flex items-center gap-2.5">
+          <img src="assets/images/logo.jpg" alt="TUATRAVEL Logo" class="w-10 h-10 object-contain rounded-lg border border-cyan-100">
+          <div>
+            <div class="font-heading font-black text-lg text-tua-navy">TUATRAVEL</div>
+            <div class="text-[10px] text-gray-500 font-medium">Trọn cảm xúc chuyến đi</div>
+          </div>
+        </div>
+        <button id="mobile-menu-close" class="w-8 h-8 rounded-full bg-gray-100 text-gray-600 flex items-center justify-center hover:bg-gray-200">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-4 mt-6 font-medium text-gray-700">
+        <a href="#hero" class="mobile-nav-link flex items-center gap-3 py-2 px-3 rounded-lg hover:bg-tua-sky hover:text-tua-navy transition-colors">
+          <i class="fa-solid fa-house text-tua-ocean w-5"></i> Trang chủ
+        </a>
+        <a href="#about" class="mobile-nav-link flex items-center gap-3 py-2 px-3 rounded-lg hover:bg-tua-sky hover:text-tua-navy transition-colors">
+          <i class="fa-solid fa-shield-halved text-tua-ocean w-5"></i> Về chúng tôi (Vì sao chọn TUA)
+        </a>
+        <a href="#tours" class="mobile-nav-link flex items-center gap-3 py-2 px-3 rounded-lg hover:bg-tua-sky hover:text-tua-navy transition-colors">
+          <i class="fa-solid fa-compass text-tua-ocean w-5"></i> Khám phá danh mục tour
+        </a>
+        <a href="#experience" class="mobile-nav-link flex items-center gap-3 py-2 px-3 rounded-lg hover:bg-tua-sky hover:text-tua-navy transition-colors">
+          <i class="fa-solid fa-heart text-tua-ocean w-5"></i> Phong cách trải nghiệm
+        </a>
+        <a href="#offer" class="mobile-nav-link flex items-center gap-3 py-2 px-3 rounded-lg hover:bg-tua-sky hover:text-tua-navy transition-colors">
+          <i class="fa-solid fa-fire text-tua-coral w-5"></i> Ưu đãi & Tour nổi bật
+        </a>
+        <a href="#faq" class="mobile-nav-link flex items-center gap-3 py-2 px-3 rounded-lg hover:bg-tua-sky hover:text-tua-navy transition-colors">
+          <i class="fa-solid fa-circle-question text-tua-ocean w-5"></i> Câu hỏi thường gặp (FAQ)
+        </a>
+        <a href="#contact" class="mobile-nav-link flex items-center gap-3 py-2 px-3 rounded-lg hover:bg-tua-sky hover:text-tua-navy transition-colors">
+          <i class="fa-solid fa-envelope text-tua-ocean w-5"></i> Liên hệ chúng tôi
+        </a>
+      </nav>
+    </div>
+
+    <div class="pt-6 border-t border-gray-100 flex flex-col gap-3">
+      <a href="tel:19001234" class="flex items-center justify-center gap-2 w-full py-3 bg-slate-100 text-slate-800 rounded-xl font-bold text-sm">
+        <i class="fa-solid fa-phone text-tua-ocean"></i> Hotline: 1900 1234
+      </a>
+      <a href="#booking" class="mobile-nav-link flex items-center justify-center gap-2 w-full py-3 bg-gradient-to-r from-tua-ocean to-cyan-600 text-white rounded-xl font-bold text-sm shadow-md">
+        <i class="fa-solid fa-paper-plane"></i> Đăng ký tư vấn miễn phí
+      </a>
+    </div>
+  </div>
+
+
+  <!-- ========================================================================= -->
+  <!-- KHỐI 1: HERO SECTION – ATTENTION (MÔ HÌNH 5 KHỐI VÀNG)                     -->
+  <!-- ========================================================================= -->
+  <section id="hero" class="relative min-h-[92vh] lg:min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16">
+    
+    <!-- Dynamic Slideshow Backgrounds (Real Vietnam Scenic Photos) -->
+    <div class="absolute inset-0 z-0">
+      <!-- Slide 1: Phú Quốc sunset -->
+      <div class="hero-slide absolute inset-0 bg-cover bg-center transition-all duration-1000 transform opacity-100 scale-100" style="background-image: url('assets/images/tour-bien-dao.jpg');"></div>
+      <!-- Slide 2: Fansipan Sa Pa -->
+      <div class="hero-slide absolute inset-0 bg-cover bg-center transition-all duration-1000 transform opacity-0 scale-105" style="background-image: url('assets/images/tour-nui-rung.jpg');"></div>
+      <!-- Slide 3: Tràng An Ninh Bình -->
+      <div class="hero-slide absolute inset-0 bg-cover bg-center transition-all duration-1000 transform opacity-0 scale-105" style="background-image: url('assets/images/tour-van-hoa.jpg');"></div>
+      <!-- Slide 4: Miền Tây Sông Nước Bến Tre -->
+      <div class="hero-slide absolute inset-0 bg-cover bg-center transition-all duration-1000 transform opacity-0 scale-105" style="background-image: url('assets/images/tour-song-nuoc.jpg');"></div>
+
+      <!-- Modern Cinematic Dark Gradients -->
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/65 to-slate-900/40"></div>
+      <div class="absolute inset-0 bg-tua-navy/30 mix-blend-multiply"></div>
+    </div>
+
+    <!-- Main Hero Content -->
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+      
+      <!-- Brand Sub-pill Tag -->
+      <div class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md border border-white/25 px-4 py-1.5 rounded-full text-white text-xs sm:text-sm font-semibold mb-6 animate-float">
+        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+        <span class="text-cyan-300">TUATRAVEL</span> • Dịch vụ du lịch trong nước hàng đầu
+      </div>
+
+      <!-- Main Headline (Exact Required Text) -->
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-heading font-black text-white tracking-tight leading-tight max-w-5xl uppercase drop-shadow-lg">
+        TUATRAVEL – <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-teal-200 to-cyan-400">CHẠM HÀNH TRÌNH,</span> TRỌN CẢM XÚC!
+      </h1>
+
+      <!-- Subtitle Description (Exact Required Text) -->
+      <p class="mt-6 text-base sm:text-lg lg:text-xl text-slate-100 max-w-3xl leading-relaxed font-light drop-shadow">
+        Việt Nam có muôn vàn điều thú vị đang chờ bạn khám phá. Cùng TUATRAVEL bắt đầu hành trình mới, tận hưởng cảnh đẹp, khám phá văn hóa và lưu giữ những khoảnh khắc đáng nhớ.
+      </p>
+
+      <!-- Two Main CTA Action Buttons (Exact Required Text) -->
+      <div class="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+        <a href="#tours" class="w-full sm:w-auto flex items-center justify-center gap-3 bg-gradient-to-r from-tua-ocean to-cyan-500 hover:from-cyan-400 hover:to-tua-ocean text-white font-heading font-bold text-sm sm:text-base uppercase tracking-wider px-8 py-4 rounded-full shadow-2xl glow-primary transition-all duration-300 transform hover:-translate-y-1">
+          <i class="fa-solid fa-compass text-lg"></i>
+          <span>KHÁM PHÁ TOUR NGAY</span>
+        </a>
+
+        <a href="#booking" class="w-full sm:w-auto flex items-center justify-center gap-3 bg-white/15 hover:bg-white/25 text-white border-2 border-white/40 hover:border-white font-heading font-bold text-sm sm:text-base uppercase tracking-wider px-8 py-4 rounded-full backdrop-blur-md shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+          <i class="fa-solid fa-headset text-lg text-cyan-300"></i>
+          <span>TƯ VẤN CHUYẾN ĐI</span>
+        </a>
+      </div>
+
+      <!-- Quick Search Filter Bar (UX High Conversion) -->
+      <div class="w-full max-w-4xl mt-12 bg-white/95 backdrop-blur-xl p-4 sm:p-5 rounded-2xl sm:rounded-3xl shadow-2xl border border-white text-left">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 items-center">
+          
+          <!-- Filter: Destination -->
+          <div class="flex items-center gap-3 px-3 py-2.5 bg-slate-50 hover:bg-slate-100 rounded-xl border border-slate-200 transition-colors">
+            <span class="text-tua-ocean text-lg"><i class="fa-solid fa-location-dot"></i></span>
+            <div class="w-full">
+              <label for="search-destination" class="block text-[10px] font-bold uppercase tracking-wider text-slate-500">Điểm đến</label>
+              <select id="search-destination" class="w-full bg-transparent text-xs sm:text-sm font-semibold text-slate-800 focus:outline-none cursor-pointer">
+                <option value="">Tất cả điểm đến</option>
+                <option value="Phú Quốc">Phú Quốc (Biển đảo)</option>
+                <option value="Sa Pa">Sa Pa (Săn mây Fansipan)</option>
+                <option value="Ninh Bình">Ninh Bình (Di sản Cố Đô)</option>
+                <option value="Bến Tre">Bến Tre - Miền Tây</option>
+                <option value="Đà Lạt">Đà Lạt ngàn hoa</option>
+                <option value="Đà Nẵng">Đà Nẵng - Hội An</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Filter: Category -->
+          <div class="flex items-center gap-3 px-3 py-2.5 bg-slate-50 hover:bg-slate-100 rounded-xl border border-slate-200 transition-colors">
+            <span class="text-tua-ocean text-lg"><i class="fa-solid fa-layer-group"></i></span>
+            <div class="w-full">
+              <label for="search-type" class="block text-[10px] font-bold uppercase tracking-wider text-slate-500">Loại hình</label>
+              <select id="search-type" class="w-full bg-transparent text-xs sm:text-sm font-semibold text-slate-800 focus:outline-none cursor-pointer">
+                <option value="all">Mọi loại hình</option>
+                <option value="bien-dao">Du lịch Biển đảo</option>
+                <option value="nui-rung">Du lịch Núi rừng</option>
+                <option value="van-hoa">Du lịch Văn hóa</option>
+                <option value="song-nuoc">Du lịch Sông nước</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Filter: Duration -->
+          <div class="flex items-center gap-3 px-3 py-2.5 bg-slate-50 hover:bg-slate-100 rounded-xl border border-slate-200 transition-colors">
+            <span class="text-tua-ocean text-lg"><i class="fa-solid fa-calendar-days"></i></span>
+            <div class="w-full">
+              <label for="search-duration" class="block text-[10px] font-bold uppercase tracking-wider text-slate-500">Thời lượng</label>
+              <select id="search-duration" class="w-full bg-transparent text-xs sm:text-sm font-semibold text-slate-800 focus:outline-none cursor-pointer">
+                <option value="">Linh hoạt</option>
+                <option value="2N1D">2 Ngày 1 Đêm</option>
+                <option value="3N2D">3 Ngày 2 Đêm</option>
+                <option value="4N3D">4 Ngày 3 Đêm</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Filter Button -->
+          <div>
+            <button id="quick-search-btn" class="w-full h-full py-3.5 px-4 bg-tua-navy hover:bg-tua-ocean text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-md transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <span>Tìm Tour Ngay</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Slide Indicator Dots -->
+      <div class="flex items-center gap-2 mt-8">
+        <button class="hero-dot h-2.5 w-8 rounded-full bg-cyan-400 transition-all cursor-pointer" data-slide-index="0" aria-label="Xem cảnh Phú Quốc"></button>
+        <button class="hero-dot h-2.5 w-2.5 rounded-full bg-white/50 hover:bg-white transition-all cursor-pointer" data-slide-index="1" aria-label="Xem cảnh Fansipan Sa Pa"></button>
+        <button class="hero-dot h-2.5 w-2.5 rounded-full bg-white/50 hover:bg-white transition-all cursor-pointer" data-slide-index="2" aria-label="Xem cảnh Tràng An Ninh Bình"></button>
+        <button class="hero-dot h-2.5 w-2.5 rounded-full bg-white/50 hover:bg-white transition-all cursor-pointer" data-slide-index="3" aria-label="Xem cảnh Miền Tây Bến Tre"></button>
+      </div>
+
+    </div>
+
+    <!-- Quick Floating Trust Badges at bottom of Hero -->
+    <div class="absolute bottom-2 left-0 right-0 z-10 hidden sm:block">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex items-center justify-between text-xs text-white/80 py-2 border-t border-white/10">
+          <div class="flex items-center gap-2"><i class="fa-solid fa-shield-heart text-tua-ocean"></i> Cam kết giá minh bạch 100%</div>
+          <div class="flex items-center gap-2"><i class="fa-solid fa-user-check text-tua-ocean"></i> Lịch trình chi tiết, không phụ phí</div>
+          <div class="flex items-center gap-2"><i class="fa-solid fa-clock-rotate-left text-tua-ocean"></i> Tư vấn hỗ trợ 24/7 nhiệt tình</div>
+          <div class="flex items-center gap-2"><i class="fa-solid fa-certificate text-tua-ocean"></i> Bảo hiểm trọn gói từng chuyến đi</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- KHỐI 2: SOCIAL PROOF – TRUST (MÔ HÌNH 5 KHỐI VÀNG)                        -->
+  <!-- ========================================================================= -->
+  <section id="about" class="py-20 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header (Exact Required Text) -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 text-tua-ocean font-bold text-xs uppercase tracking-widest bg-tua-sky/80 px-3.5 py-1 rounded-full mb-3">
+          <i class="fa-solid fa-medal"></i> Giá trị cốt lõi
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-heading font-black text-slate-900 tracking-tight uppercase">
+          VÌ SAO NÊN LỰA CHỌN <span class="text-tua-ocean">TUATRAVEL?</span>
+        </h2>
+        <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed font-light">
+          Một chuyến đi trọn vẹn không chỉ nằm ở điểm đến mà còn ở những trải nghiệm trong suốt hành trình.
+        </p>
+      </div>
+
+      <!-- 4 Core Pillars Grid (Exact Required Text) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        
+        <!-- Pillar 1: Lịch trình rõ ràng -->
+        <div class="group bg-slate-50 hover:bg-white p-7 rounded-2xl border border-slate-200/80 hover:border-tua-ocean/40 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+          <div class="w-14 h-14 rounded-2xl bg-tua-sky text-tua-ocean flex items-center justify-center text-2xl mb-5 group-hover:bg-tua-ocean group-hover:text-white transition-colors duration-300">
+            <i class="fa-solid fa-route"></i>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">Lịch trình rõ ràng</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Thông tin điểm đến và hoạt động được trình bày cụ thể, khoa học, tối ưu từng khoảnh khắc trải nghiệm, không mua sắm ép buộc.
+          </p>
+        </div>
+
+        <!-- Pillar 2: Chi phí minh bạch -->
+        <div class="group bg-slate-50 hover:bg-white p-7 rounded-2xl border border-slate-200/80 hover:border-tua-ocean/40 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+          <div class="w-14 h-14 rounded-2xl bg-tua-sky text-tua-ocean flex items-center justify-center text-2xl mb-5 group-hover:bg-tua-ocean group-hover:text-white transition-colors duration-300">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">Chi phí minh bạch</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Cung cấp thông tin giá và các dịch vụ đi kèm trước khi khách hàng đăng ký, cam kết không phát sinh bất kỳ khoản chi phí ẩn nào.
+          </p>
+        </div>
+
+        <!-- Pillar 3: Tư vấn tận tình -->
+        <div class="group bg-slate-50 hover:bg-white p-7 rounded-2xl border border-slate-200/80 hover:border-tua-ocean/40 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+          <div class="w-14 h-14 rounded-2xl bg-tua-sky text-tua-ocean flex items-center justify-center text-2xl mb-5 group-hover:bg-tua-ocean group-hover:text-white transition-colors duration-300">
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">Tư vấn tận tình</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Đội ngũ chuyên viên địa phương chu đáo, lắng nghe và hỗ trợ khách hàng lựa chọn hành trình phù hợp nhất theo ngân sách và sở thích.
+          </p>
+        </div>
+
+        <!-- Pillar 4: Trải nghiệm đa dạng -->
+        <div class="group bg-slate-50 hover:bg-white p-7 rounded-2xl border border-slate-200/80 hover:border-tua-ocean/40 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+          <div class="w-14 h-14 rounded-2xl bg-tua-sky text-tua-ocean flex items-center justify-center text-2xl mb-5 group-hover:bg-tua-ocean group-hover:text-white transition-colors duration-300">
+            <i class="fa-solid fa-umbrella-beach"></i>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">Trải nghiệm đa dạng</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Nhiều lựa chọn từ nghỉ dưỡng biển đảo thư giãn đến khám phá núi cao mạo hiểm, hòa mình cùng văn hóa và thiên nhiên Việt Nam.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Impressive Quantitative Achievements / Brand Stats (Social Proof) -->
+      <div class="mt-14 bg-gradient-to-r from-tua-navy via-tua-deep to-slate-900 rounded-3xl p-8 sm:p-12 text-white shadow-xl">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/15">
+          <div class="pt-4 md:pt-0">
+            <div class="font-heading font-black text-3xl sm:text-5xl text-tua-ocean">15,000+</div>
+            <div class="text-xs sm:text-sm text-slate-300 mt-2 font-medium">Khách hàng đồng hành</div>
+          </div>
+          <div class="pt-4 md:pt-0">
+            <div class="font-heading font-black text-3xl sm:text-5xl text-amber-400">98.6%</div>
+            <div class="text-xs sm:text-sm text-slate-300 mt-2 font-medium">Đánh giá 5 sao hài lòng</div>
+          </div>
+          <div class="pt-4 md:pt-0">
+            <div class="font-heading font-black text-3xl sm:text-5xl text-cyan-300">50+</div>
+            <div class="text-xs sm:text-sm text-slate-300 mt-2 font-medium">Tuyến tour 3 miền Bắc - Trung - Nam</div>
+          </div>
+          <div class="pt-4 md:pt-0">
+            <div class="font-heading font-black text-3xl sm:text-5xl text-emerald-400">100%</div>
+            <div class="text-xs sm:text-sm text-slate-300 mt-2 font-medium">Bảo hiểm du lịch trọn vẹn</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials / Customer Reviews Showcase -->
+      <div class="mt-20">
+        <div class="flex flex-col sm:flex-row items-center justify-between mb-10 gap-4">
+          <div>
+            <h3 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900">
+              Khách hàng nói gì về <span class="text-tua-ocean">TUATRAVEL?</span>
+            </h3>
+            <p class="text-slate-500 text-sm mt-1">Cảm nhận thực tế từ những du khách trẻ, các gia đình và nhóm bạn bè sau mỗi chuyến đi.</p>
+          </div>
+          <div class="flex items-center gap-2 text-amber-500 bg-amber-50 px-4 py-2 rounded-full border border-amber-200">
+            <i class="fa-solid fa-star"></i>
+            <span class="font-bold text-slate-800 text-sm">4.9 / 5.0</span>
+            <span class="text-slate-400 text-xs">(Dựa trên 1.250+ đánh giá xác thực)</span>
+          </div>
+        </div>
+
+        <!-- Reviews Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Review 1: Young Couple / Beach -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 text-amber-400 text-sm mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed italic mb-4">
+                "Chuyến đi Phú Quốc 3N2Đ vừa rồi với TUATRAVEL thực sự vượt ngoài mong đợi! Sunset Town đẹp như tranh, cano đưa lặn ngắm san hô cực kỳ an toàn và anh HDV chụp ảnh có tâm đến từng góc máy. Chi phí cực kỳ rõ ràng, không phát sinh một đồng nào."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+              <div class="w-10 h-10 rounded-full bg-cyan-100 text-tua-ocean font-bold flex items-center justify-center text-sm">
+                TL
+              </div>
+              <div>
+                <h4 class="font-bold text-xs sm:text-sm text-slate-900">Lê Thu Thảo & Minh Đức</h4>
+                <div class="text-[11px] text-slate-400">Cặp đôi • Tour Phú Quốc Hoàng Hôn</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2: Young Group / Trekking -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 text-amber-400 text-sm mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed italic mb-4">
+                "Nhóm sinh viên tụi mình săn mây Fansipan thành công mỹ mãn! Lịch trình của TUATRAVEL sắp xếp rất khoa học, vừa được leo Fansipan lại vừa kịp check-in bản Cát Cát và ăn lẩu cá tầm nóng hổi. Giá tour rất sinh viên nhưng dịch vụ 4 sao chu đáo."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+              <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center text-sm">
+                NL
+              </div>
+              <div>
+                <h4 class="font-bold text-xs sm:text-sm text-slate-900">Nguyễn Hoàng Long</h4>
+                <div class="text-[11px] text-slate-400">Nhóm bạn thân • Tour Sa Pa Săn Mây</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3: Family / Culture & River -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 text-amber-400 text-sm mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed italic mb-4">
+                "Cả nhà 6 người gồm bố mẹ lớn tuổi đi tour Bến Tre - Miền Tây của TUATRAVEL ai cũng khen. Xe di chuyển êm ái, bác tài vui tính, đồ ăn miệt vườn ngon miệng và chèo xuồng rợp bóng dừa mát rượi. Tư vấn viên hỗ trợ nhiệt tình từ lúc chốt tour đến khi về."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+              <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-700 font-bold flex items-center justify-center text-sm">
+                TH
+              </div>
+              <div>
+                <h4 class="font-bold text-xs sm:text-sm text-slate-900">Chị Thanh Hương</h4>
+                <div class="text-[11px] text-slate-400">Gia đình 6 người • Tour Bến Tre Sông Nước</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Trust Brand Logos / Partners Strip -->
+      <div class="mt-16 pt-10 border-t border-slate-100">
+        <p class="text-center text-xs font-bold uppercase tracking-widest text-slate-400 mb-6">
+          Đối tác hàng không & chuỗi nghỉ dưỡng hàng đầu đồng hành cùng TUATRAVEL
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-8 sm:gap-14 opacity-65 grayscale hover:grayscale-0 transition-all duration-300">
+          <span class="font-heading font-black text-slate-700 text-base sm:text-lg tracking-wider flex items-center gap-2">
+            <i class="fa-solid fa-plane text-tua-ocean"></i> Vietnam Airlines
+          </span>
+          <span class="font-heading font-black text-rose-600 text-base sm:text-lg tracking-wider flex items-center gap-2">
+            <i class="fa-solid fa-plane-departure"></i> Vietjet Air
+          </span>
+          <span class="font-heading font-black text-emerald-600 text-base sm:text-lg tracking-wider flex items-center gap-2">
+            <i class="fa-solid fa-plane-arrival"></i> Bamboo Airways
+          </span>
+          <span class="font-heading font-black text-amber-600 text-base sm:text-lg tracking-wider flex items-center gap-2">
+            <i class="fa-solid fa-hotel"></i> Vinpearl
+          </span>
+          <span class="font-heading font-black text-tua-navy text-base sm:text-lg tracking-wider flex items-center gap-2">
+            <i class="fa-solid fa-mountain-sun"></i> Sun World
+          </span>
+          <span class="font-heading font-black text-slate-700 text-base sm:text-lg tracking-wider flex items-center gap-2">
+            <i class="fa-solid fa-shield-halved text-emerald-500"></i> Bảo Việt Tokio Marine
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- KHỐI 3: FEATURES/BENEFITS – INTEREST & DESIRE (MÔ HÌNH 5 KHỐI VÀNG)       -->
+  <!-- ========================================================================= -->
+  <section id="tours" class="py-20 bg-tua-light relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header (Exact Required Text) -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 text-tua-ocean font-bold text-xs uppercase tracking-widest bg-tua-sky px-3.5 py-1 rounded-full mb-3">
+          <i class="fa-solid fa-map-location-dot"></i> Danh mục hành trình
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-heading font-black text-slate-900 tracking-tight uppercase">
+          KHÁM PHÁ VIỆT NAM – MỞ RA NHỮNG HÀNH TRÌNH ĐÁNG NHỚ
+        </h2>
+        <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed font-light">
+          Từ những bãi biển trong xanh, núi rừng hùng vĩ đến những thành phố mang đậm dấu ấn văn hóa, TUATRAVEL mang đến nhiều gợi ý hành trình để bạn lựa chọn theo sở thích.
+        </p>
+      </div>
+
+      <!-- Quick Feedback Pill from Quick Search -->
+      <div id="search-feedback-bar" class="hidden text-center text-sm font-semibold text-tua-navy bg-cyan-100 border border-cyan-200 px-4 py-2 rounded-xl mb-8 max-w-xl mx-auto"></div>
+
+      <!-- Category Filter Tabs -->
+      <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12">
+        <button class="tour-tab-btn active px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all bg-tua-ocean text-white shadow-md cursor-pointer" data-category="all">
+          <i class="fa-solid fa-grip mr-1.5"></i> Tất cả các tour
+        </button>
+        <button class="tour-tab-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all bg-white text-slate-700 hover:bg-cyan-50 border border-slate-200 cursor-pointer" data-category="bien-dao">
+          <i class="fa-solid fa-umbrella-beach text-cyan-600 mr-1.5"></i> 1. Du lịch Biển đảo
+        </button>
+        <button class="tour-tab-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all bg-white text-slate-700 hover:bg-cyan-50 border border-slate-200 cursor-pointer" data-category="nui-rung">
+          <i class="fa-solid fa-mountain text-emerald-600 mr-1.5"></i> 2. Du lịch Núi rừng
+        </button>
+        <button class="tour-tab-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all bg-white text-slate-700 hover:bg-cyan-50 border border-slate-200 cursor-pointer" data-category="van-hoa">
+          <i class="fa-solid fa-landmark text-amber-600 mr-1.5"></i> 3. Du lịch Văn hóa
+        </button>
+        <button class="tour-tab-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all bg-white text-slate-700 hover:bg-cyan-50 border border-slate-200 cursor-pointer" data-category="song-nuoc">
+          <i class="fa-solid fa-water text-teal-600 mr-1.5"></i> 4. Du lịch Sông nước
+        </button>
+      </div>
+
+      <!-- 4 Tour Cards Grid (Each with Image, Name, Short Desc, Duration, Estimated Price, CTA "Xem chi tiết") -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
+        
+        <!-- CARD 1: DU LỊCH BIỂN ĐẢO (Phú Quốc, Nha Trang, Đà Nẵng) -->
+        <div class="tour-card-item flex flex-col bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1.5 group" data-category="bien-dao">
+          <!-- Card Image Container -->
+          <div class="relative h-56 card-zoom">
+            <img src="assets/images/tour-bien-dao.jpg" alt="Du lịch Biển đảo Phú Quốc" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent"></div>
+            <!-- Category Badge -->
+            <span class="absolute top-3 left-3 bg-tua-ocean text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">
+              <i class="fa-solid fa-umbrella-beach mr-1"></i> Biển đảo
+            </span>
+            <span class="absolute top-3 right-3 bg-rose-500 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase shadow">
+              HOT
+            </span>
+            <div class="absolute bottom-3 left-3 right-3 text-white">
+              <span class="text-xs text-cyan-200 font-medium"><i class="fa-solid fa-location-dot mr-1"></i> Phú Quốc, Nha Trang, Đà Nẵng</span>
+            </div>
+          </div>
+
+          <!-- Card Body -->
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-heading font-bold text-base sm:text-lg text-slate-900 group-hover:text-tua-ocean transition-colors line-clamp-2">
+                1. DU LỊCH BIỂN ĐẢO: Phú Quốc – Sunset Town & Cầu Hôn
+              </h3>
+              <p class="text-slate-600 text-xs sm:text-sm mt-2 leading-relaxed">
+                Tận hưởng biển xanh, cát trắng và những khoảnh khắc nghỉ dưỡng thư giãn, check-in Cầu Hôn biểu tượng và lặn san hô 4 đảo.
+              </p>
+            </div>
+
+            <!-- Tour Meta & Pricing -->
+            <div class="mt-4 pt-4 border-t border-slate-100">
+              <div class="flex items-center justify-between text-xs text-slate-500 mb-3">
+                <span><i class="fa-regular fa-clock text-tua-ocean mr-1"></i> 3 Ngày 2 Đêm</span>
+                <span><i class="fa-solid fa-hotel text-tua-ocean mr-1"></i> Khách sạn 4*</span>
+              </div>
+              <div class="flex items-baseline justify-between mb-4">
+                <div>
+                  <span class="text-[11px] text-slate-400 line-through">4.290.000 đ</span>
+                  <div class="font-heading font-black text-xl text-tua-ocean">3.490.000 đ</div>
+                </div>
+                <span class="text-[10px] font-bold text-rose-600 bg-rose-50 px-2 py-0.5 rounded-md">-19%</span>
+              </div>
+              <button class="btn-view-detail w-full py-2.5 px-4 bg-slate-900 hover:bg-tua-ocean text-white rounded-xl text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow" data-tour-id="phu-quoc">
+                <i class="fa-solid fa-eye"></i> Xem chi tiết
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2: DU LỊCH NÚI RỪNG (Đà Lạt, Sa Pa, Hà Giang) -->
+        <div class="tour-card-item flex flex-col bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1.5 group" data-category="nui-rung">
+          <div class="relative h-56 card-zoom">
+            <img src="assets/images/tour-nui-rung.jpg" alt="Du lịch Núi rừng Sa Pa Fansipan" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent"></div>
+            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">
+              <i class="fa-solid fa-mountain mr-1"></i> Núi rừng
+            </span>
+            <span class="absolute top-3 right-3 bg-emerald-500 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase shadow">
+              Săn mây
+            </span>
+            <div class="absolute bottom-3 left-3 right-3 text-white">
+              <span class="text-xs text-emerald-200 font-medium"><i class="fa-solid fa-location-dot mr-1"></i> Đà Lạt, Sa Pa, Hà Giang</span>
+            </div>
+          </div>
+
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-heading font-bold text-base sm:text-lg text-slate-900 group-hover:text-emerald-700 transition-colors line-clamp-2">
+                2. DU LỊCH NÚI RỪNG: Sa Pa – Chinh Phục Đỉnh Fansipan
+              </h3>
+              <p class="text-slate-600 text-xs sm:text-sm mt-2 leading-relaxed">
+                Khám phá thiên nhiên, tận hưởng không khí trong lành và trải nghiệm văn hóa địa phương bản Cát Cát, ngắm biển mây Tây Bắc.
+              </p>
+            </div>
+
+            <div class="mt-4 pt-4 border-t border-slate-100">
+              <div class="flex items-center justify-between text-xs text-slate-500 mb-3">
+                <span><i class="fa-regular fa-clock text-emerald-600 mr-1"></i> 3 Ngày 2 Đêm</span>
+                <span><i class="fa-solid fa-bus text-emerald-600 mr-1"></i> Limousine VIP</span>
+              </div>
+              <div class="flex items-baseline justify-between mb-4">
+                <div>
+                  <span class="text-[11px] text-slate-400 line-through">3.590.000 đ</span>
+                  <div class="font-heading font-black text-xl text-emerald-600">2.890.000 đ</div>
+                </div>
+                <span class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md">-20%</span>
+              </div>
+              <button class="btn-view-detail w-full py-2.5 px-4 bg-slate-900 hover:bg-emerald-600 text-white rounded-xl text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow" data-tour-id="sa-pa">
+                <i class="fa-solid fa-eye"></i> Xem chi tiết
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3: DU LỊCH VĂN HÓA (Hội An, Huế, Ninh Bình) -->
+        <div class="tour-card-item flex flex-col bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1.5 group" data-category="van-hoa">
+          <div class="relative h-56 card-zoom">
+            <img src="assets/images/tour-van-hoa.jpg" alt="Du lịch Văn hóa Ninh Bình Tràng An" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent"></div>
+            <span class="absolute top-3 left-3 bg-amber-600 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">
+              <i class="fa-solid fa-landmark mr-1"></i> Văn hóa
+            </span>
+            <span class="absolute top-3 right-3 bg-amber-500 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase shadow">
+              Di sản kép
+            </span>
+            <div class="absolute bottom-3 left-3 right-3 text-white">
+              <span class="text-xs text-amber-200 font-medium"><i class="fa-solid fa-location-dot mr-1"></i> Hội An, Huế, Ninh Bình</span>
+            </div>
+          </div>
+
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-heading font-bold text-base sm:text-lg text-slate-900 group-hover:text-amber-700 transition-colors line-clamp-2">
+                3. DU LỊCH VĂN HÓA: Ninh Bình – Tràng An & Cố Đô Hoa Lư
+              </h3>
+              <p class="text-slate-600 text-xs sm:text-sm mt-2 leading-relaxed">
+                Tìm hiểu những giá trị văn hóa, kiến trúc và nét đẹp truyền thống Việt Nam, ngồi thuyền nan lướt sông ngô đồng kỳ vĩ.
+              </p>
+            </div>
+
+            <div class="mt-4 pt-4 border-t border-slate-100">
+              <div class="flex items-center justify-between text-xs text-slate-500 mb-3">
+                <span><i class="fa-regular fa-clock text-amber-600 mr-1"></i> 2 Ngày 1 Đêm</span>
+                <span><i class="fa-solid fa-ship text-amber-600 mr-1"></i> Thuyền nan & Xe VIP</span>
+              </div>
+              <div class="flex items-baseline justify-between mb-4">
+                <div>
+                  <span class="text-[11px] text-slate-400 line-through">2.450.000 đ</span>
+                  <div class="font-heading font-black text-xl text-amber-600">1.950.000 đ</div>
+                </div>
+                <span class="text-[10px] font-bold text-amber-600 bg-amber-50 px-2 py-0.5 rounded-md">-20%</span>
+              </div>
+              <button class="btn-view-detail w-full py-2.5 px-4 bg-slate-900 hover:bg-amber-600 text-white rounded-xl text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow" data-tour-id="ninh-binh">
+                <i class="fa-solid fa-eye"></i> Xem chi tiết
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4: DU LỊCH SÔNG NƯỚC (Bến Tre, Tiền Giang) -->
+        <div class="tour-card-item flex flex-col bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1.5 group" data-category="song-nuoc">
+          <div class="relative h-56 card-zoom">
+            <img src="assets/images/tour-song-nuoc.jpg" alt="Du lịch Sông nước Bến Tre Tiền Giang" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent"></div>
+            <span class="absolute top-3 left-3 bg-teal-600 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">
+              <i class="fa-solid fa-water mr-1"></i> Sông nước
+            </span>
+            <span class="absolute top-3 right-3 bg-teal-500 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase shadow">
+              Miệt vườn
+            </span>
+            <div class="absolute bottom-3 left-3 right-3 text-white">
+              <span class="text-xs text-teal-200 font-medium"><i class="fa-solid fa-location-dot mr-1"></i> Bến Tre, Tiền Giang, Cần Thơ</span>
+            </div>
+          </div>
+
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-heading font-bold text-base sm:text-lg text-slate-900 group-hover:text-teal-700 transition-colors line-clamp-2">
+                4. DU LỊCH SÔNG NƯỚC: Bến Tre Xứ Dừa – Miền Tây
+              </h3>
+              <p class="text-slate-600 text-xs sm:text-sm mt-2 leading-relaxed">
+                Tận hưởng mùa nước nổi, cùng các hoạt động dân gian chỉ có tại Miền Tây, chèo xuồng ba lá len lỏi rợp bóng dừa mát rượi.
+              </p>
+            </div>
+
+            <div class="mt-4 pt-4 border-t border-slate-100">
+              <div class="flex items-center justify-between text-xs text-slate-500 mb-3">
+                <span><i class="fa-regular fa-clock text-teal-600 mr-1"></i> 2 Ngày 1 Đêm</span>
+                <span><i class="fa-solid fa-sailboat text-teal-600 mr-1"></i> Tàu & Xuồng ba lá</span>
+              </div>
+              <div class="flex items-baseline justify-between mb-4">
+                <div>
+                  <span class="text-[11px] text-slate-400 line-through">2.150.000 đ</span>
+                  <div class="font-heading font-black text-xl text-teal-600">1.650.000 đ</div>
+                </div>
+                <span class="text-[10px] font-bold text-teal-600 bg-teal-50 px-2 py-0.5 rounded-md">-23%</span>
+              </div>
+              <button class="btn-view-detail w-full py-2.5 px-4 bg-slate-900 hover:bg-teal-600 text-white rounded-xl text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow" data-tour-id="mien-tay">
+                <i class="fa-solid fa-eye"></i> Xem chi tiết
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Area: TRẢI NGHIỆM CỦA BẠN – LỰA CHỌN CỦA BẠN (Exact Required Section) -->
+      <div id="experience" class="mt-20 pt-16 border-t border-slate-200">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <h3 class="text-2xl sm:text-3xl font-heading font-black text-slate-900 uppercase">
+            TRẢI NGHIỆM CỦA BẠN – LỰA CHỌN CỦA BẠN
+          </h3>
+          <p class="text-slate-600 text-sm mt-2">Dù bạn thích phiêu lưu thử thách hay những ngày thảnh thơi bên người thân, TUATRAVEL đều có phương án hoàn hảo dành cho bạn.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Experience 1: Tour khám phá -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-tua-ocean hover:shadow-lg transition-all text-center">
+            <div class="w-14 h-14 mx-auto rounded-full bg-cyan-50 text-tua-ocean flex items-center justify-center text-2xl mb-4">
+              <i class="fa-solid fa-hiking"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-1">Tour khám phá</h4>
+            <p class="text-slate-500 text-xs sm:text-sm">Dành cho người yêu thích trải nghiệm, săn mây, trekking và hòa mình cùng bản sắc địa phương.</p>
+          </div>
+
+          <!-- Experience 2: Tour nghỉ dưỡng -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-tua-ocean hover:shadow-lg transition-all text-center">
+            <div class="w-14 h-14 mx-auto rounded-full bg-cyan-50 text-tua-ocean flex items-center justify-center text-2xl mb-4">
+              <i class="fa-solid fa-spa"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-1">Tour nghỉ dưỡng</h4>
+            <p class="text-slate-500 text-xs sm:text-sm">Dành cho người muốn thư giãn, tái tạo năng lượng tại các khu resort cao cấp ven biển thơ mộng.</p>
+          </div>
+
+          <!-- Experience 3: Tour nhóm -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-tua-ocean hover:shadow-lg transition-all text-center">
+            <div class="w-14 h-14 mx-auto rounded-full bg-cyan-50 text-tua-ocean flex items-center justify-center text-2xl mb-4">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-1">Tour nhóm</h4>
+            <p class="text-slate-500 text-xs sm:text-sm">Phù hợp với bạn bè và đồng nghiệp, kết hợp các hoạt động teambuilding, tiệc nướng BBQ gắn kết.</p>
+          </div>
+
+          <!-- Experience 4: Tour gia đình -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-tua-ocean hover:shadow-lg transition-all text-center">
+            <div class="w-14 h-14 mx-auto rounded-full bg-cyan-50 text-tua-ocean flex items-center justify-center text-2xl mb-4">
+              <i class="fa-solid fa-house-chimney-user"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-1">Tour gia đình</h4>
+            <p class="text-slate-500 text-xs sm:text-sm">Hướng đến những chuyến đi gắn kết đầm ấm, lịch trình thong thả, an toàn chu đáo cho mọi thế hệ.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- KHỐI 4: OFFER & PRICE – ACTION (MÔ HÌNH 5 KHỐI VÀNG)                       -->
+  <!-- ========================================================================= -->
+  <section id="offer" class="py-20 bg-gradient-to-b from-white via-slate-50 to-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header (Exact Required Text) -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 text-rose-600 font-bold text-xs uppercase tracking-widest bg-rose-50 px-3.5 py-1 rounded-full mb-3">
+          <i class="fa-solid fa-fire animate-bounce"></i> Cơ hội duy nhất trong tháng
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-heading font-black text-slate-900 tracking-tight uppercase">
+          SẴN SÀNG CHO CHUYẾN ĐI TIẾP THEO CỦA BẠN?
+        </h2>
+        <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed font-light">
+          Đừng để những dự định khám phá Việt Nam chỉ nằm trên kế hoạch. Hãy lựa chọn điểm đến yêu thích và để TUATRAVEL đồng hành cùng bạn lên lịch trình phù hợp.
+        </p>
+      </div>
+
+      <!-- Spotlight Best-Seller Featured Deal Tour -->
+      <div class="bg-white rounded-3xl border-2 border-tua-ocean/30 shadow-2xl overflow-hidden mb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
+          
+          <!-- Image showcase -->
+          <div class="lg:col-span-5 relative min-h-[280px] lg:min-h-full">
+            <img src="assets/images/tour-bien-dao.jpg" alt="Tour Nổi Bật Phú Quốc" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-slate-950/80 via-slate-950/40 to-transparent"></div>
+            
+            <div class="absolute top-4 left-4">
+              <span class="bg-rose-600 text-white text-xs font-black uppercase px-3 py-1.5 rounded-full shadow-lg">
+                ★ TOUR NỔI BẬT NHẤT 2024
+              </span>
+            </div>
+
+            <div class="absolute bottom-5 left-5 right-5 text-white">
+              <div class="text-xs text-cyan-300 font-semibold uppercase tracking-wider">Hành trình quốc dân</div>
+              <h3 class="font-heading font-black text-xl sm:text-2xl text-white mt-1">Phú Quốc: Sunset Town & Đảo Ngọc Mộng Mơ</h3>
+              <p class="text-xs text-slate-300 mt-1"><i class="fa-solid fa-location-dot text-rose-400 mr-1"></i> Khởi hành: Thứ 5 & Thứ 6 hàng tuần</p>
+            </div>
+          </div>
+
+          <!-- Tour Details & Included Services -->
+          <div class="lg:col-span-7 p-6 sm:p-10 flex flex-col justify-between">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-slate-100">
+                <div class="flex items-center gap-2">
+                  <span class="w-8 h-8 rounded-lg bg-cyan-100 text-tua-ocean flex items-center justify-center text-sm font-bold">
+                    <i class="fa-solid fa-calendar-check"></i>
+                  </span>
+                  <div>
+                    <span class="block text-[11px] text-slate-400 font-medium">Thời lượng tour</span>
+                    <strong class="text-slate-800 text-sm">3 Ngày 2 Đêm</strong>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <span class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center text-sm font-bold">
+                    <i class="fa-solid fa-plane"></i>
+                  </span>
+                  <div>
+                    <span class="block text-[11px] text-slate-400 font-medium">Phương tiện</span>
+                    <strong class="text-slate-800 text-sm">Vé máy bay + Cano</strong>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <span class="w-8 h-8 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center text-sm font-bold">
+                    <i class="fa-solid fa-hotel"></i>
+                  </span>
+                  <div>
+                    <span class="block text-[11px] text-slate-400 font-medium">Lưu trú</span>
+                    <strong class="text-slate-800 text-sm">Resort 4* ven biển</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Dịch vụ bao gồm (Inclusions) -->
+              <div class="mt-6">
+                <h4 class="font-heading font-bold text-xs uppercase tracking-wider text-slate-500 mb-3">
+                  <i class="fa-solid fa-circle-check text-emerald-500 mr-1"></i> Các dịch vụ đã bao gồm trọn gói:
+                </h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-slate-700">
+                  <div class="flex items-center gap-2"><i class="fa-solid fa-check text-tua-ocean"></i> Vé máy bay khứ hồi + 20kg ký gửi</div>
+                  <div class="flex items-center gap-2"><i class="fa-solid fa-check text-tua-ocean"></i> 02 đêm resort 4 sao có hồ bơi</div>
+                  <div class="flex items-center gap-2"><i class="fa-solid fa-check text-tua-ocean"></i> Tour cano 4 đảo & lặn ngắm san hô</div>
+                  <div class="flex items-center gap-2"><i class="fa-solid fa-check text-tua-ocean"></i> Vé cáp treo Hòn Thơm & Sunset Town</div>
+                  <div class="flex items-center gap-2"><i class="fa-solid fa-check text-tua-ocean"></i> Tặng bộ ảnh SUP & clip Flycam biển</div>
+                  <div class="flex items-center gap-2"><i class="fa-solid fa-check text-tua-ocean"></i> Bảo hiểm du lịch 100.000.000 đ/người</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pricing & Action Button -->
+            <div class="mt-8 pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div>
+                <span class="text-xs text-slate-400 line-through">Giá niêm yết: 4.290.000 đ</span>
+                <div class="flex items-baseline gap-2">
+                  <span class="font-heading font-black text-2xl sm:text-3xl text-tua-ocean">3.490.000 đ</span>
+                  <span class="text-xs text-slate-500 font-medium">/ người (Tiết kiệm 800.000 đ)</span>
+                </div>
+              </div>
+
+              <a href="#booking" class="w-full sm:w-auto px-7 py-3.5 bg-gradient-to-r from-tua-ocean to-cyan-600 hover:from-cyan-600 hover:to-tua-ocean text-white font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl shadow-lg glow-primary transition-all text-center">
+                Đăng ký tư vấn tour này
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Area: ƯU ĐÃI DÀNH CHO HÀNH TRÌNH CỦA BẠN (Countdown & Voucher) -->
+      <div class="bg-gradient-to-r from-cyan-600 via-tua-ocean to-tua-navy rounded-3xl p-8 sm:p-10 text-white shadow-xl mb-16 relative overflow-hidden">
+        <div class="absolute -right-10 -bottom-10 opacity-10 text-9xl pointer-events-none">
+          <i class="fa-solid fa-gift"></i>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+          
+          <div class="lg:col-span-7">
+            <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur">
+              <i class="fa-solid fa-ticket mr-1"></i> ƯU ĐÃI GIỚI HẠN
+            </span>
+            <h3 class="font-heading font-black text-2xl sm:text-3xl mt-3 uppercase">
+              ƯU ĐÃI DÀNH CHO HÀNH TRÌNH CỦA BẠN
+            </h3>
+            <p class="text-cyan-100 text-sm mt-2 leading-relaxed">
+              Khám phá các chương trình ưu đãi dành cho khách hàng khi đăng ký tour. Nhận ngay voucher giảm <strong class="text-amber-300">15%</strong> cho nhóm bạn từ 4 người hoặc sinh viên đặt tour sớm trong tháng này.
+            </p>
+            <div class="mt-4 inline-flex items-center gap-3 bg-white/10 border border-white/20 px-4 py-2 rounded-xl text-xs sm:text-sm">
+              <span>Mã ưu đãi độc quyền:</span>
+              <code class="font-mono font-bold text-amber-300 bg-black/30 px-2.5 py-1 rounded">TUAYOUTH15</code>
+              <span class="text-[11px] text-cyan-200">(Chỉ còn 8/20 suất tuần này)</span>
+            </div>
+          </div>
+
+          <!-- Countdown Timer -->
+          <div class="lg:col-span-5 bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 text-center">
+            <div class="text-xs uppercase tracking-widest text-cyan-200 font-semibold mb-3">Thời gian ưu đãi còn lại</div>
+            <div class="flex items-center justify-center gap-3">
+              <div class="bg-slate-900/80 rounded-xl p-3 min-w-[64px] border border-white/10">
+                <span id="timer-hours" class="font-heading font-black text-2xl sm:text-3xl text-cyan-300">36</span>
+                <span class="block text-[10px] text-slate-300 uppercase mt-0.5">Giờ</span>
+              </div>
+              <span class="font-black text-xl text-cyan-300">:</span>
+              <div class="bg-slate-900/80 rounded-xl p-3 min-w-[64px] border border-white/10">
+                <span id="timer-minutes" class="font-heading font-black text-2xl sm:text-3xl text-cyan-300">45</span>
+                <span class="block text-[10px] text-slate-300 uppercase mt-0.5">Phút</span>
+              </div>
+              <span class="font-black text-xl text-cyan-300">:</span>
+              <div class="bg-slate-900/80 rounded-xl p-3 min-w-[64px] border border-white/10">
+                <span id="timer-seconds" class="font-heading font-black text-2xl sm:text-3xl text-amber-400">20</span>
+                <span class="block text-[10px] text-slate-300 uppercase mt-0.5">Giây</span>
+              </div>
+            </div>
+            <div class="mt-4 text-[11px] text-cyan-100 italic">
+              * Ưu đãi áp dụng khi đăng ký thông tin tư vấn qua form bên dưới.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Consultation Form (Exact Fields & Validation Requirements) -->
+      <div id="booking" class="max-w-3xl mx-auto bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-2xl relative">
+        <div class="text-center mb-8">
+          <div class="w-12 h-12 rounded-2xl bg-tua-sky text-tua-ocean flex items-center justify-center text-xl mx-auto mb-3">
+            <i class="fa-solid fa-paper-plane"></i>
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-heading font-black text-slate-900 uppercase">
+            ĐĂNG KÝ TƯ VẤN CHUYẾN ĐI
+          </h3>
+          <p class="text-slate-500 text-sm mt-1">
+            Điền thông tin bên dưới, chuyên viên TUATRAVEL sẽ liên hệ tư vấn lịch trình chi tiết và báo giá tốt nhất cho bạn trong 15 phút.
+          </p>
+        </div>
+
+        <form id="consultation-form" class="space-y-4 sm:space-y-5" novalidate>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Field: Họ và tên -->
+            <div>
+              <label for="form-name" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">
+                Họ và tên <span class="text-rose-500">*</span>
+              </label>
+              <div class="relative">
+                <input type="text" id="form-name" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-tua-ocean focus:ring-2 focus:ring-tua-ocean/20 text-sm font-medium transition-all" placeholder="Ví dụ: Nguyễn Văn A" required>
+              </div>
+            </div>
+
+            <!-- Field: Số điện thoại -->
+            <div>
+              <label for="form-phone" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">
+                Số điện thoại <span class="text-rose-500">*</span>
+              </label>
+              <div class="relative">
+                <input type="tel" id="form-phone" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-tua-ocean focus:ring-2 focus:ring-tua-ocean/20 text-sm font-medium transition-all" placeholder="Ví dụ: 0912 345 678" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Field: Email -->
+            <div>
+              <label for="form-email" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">
+                Email nhận lịch trình
+              </label>
+              <input type="email" id="form-email" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-tua-ocean focus:ring-2 focus:ring-tua-ocean/20 text-sm font-medium transition-all" placeholder="Ví dụ: ban@gmail.com">
+            </div>
+
+            <!-- Field: Điểm đến mong muốn -->
+            <div>
+              <label for="form-destination" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">
+                Điểm đến mong muốn <span class="text-rose-500">*</span>
+              </label>
+              <select id="form-destination" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-tua-ocean focus:ring-2 focus:ring-tua-ocean/20 text-sm font-medium transition-all bg-white cursor-pointer" required>
+                <option value="">-- Chọn điểm đến yêu thích --</option>
+                <option value="Phú Quốc">Phú Quốc (Biển đảo)</option>
+                <option value="Sa Pa">Sa Pa - Fansipan (Núi rừng)</option>
+                <option value="Tràng An">Tràng An - Ninh Bình (Văn hóa)</option>
+                <option value="Bến Tre">Bến Tre - Miền Tây (Sông nước)</option>
+                <option value="Đà Lạt">Đà Lạt mộng mơ</option>
+                <option value="Đà Nẵng">Đà Nẵng - Hội An</option>
+                <option value="Điểm đến khác">Tư vấn điểm đến khác theo yêu cầu</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Field: Số lượng người tham gia -->
+            <div>
+              <label for="form-guests" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">
+                Số lượng khách (Người lớn + Trẻ em)
+              </label>
+              <select id="form-guests" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-tua-ocean focus:ring-2 focus:ring-tua-ocean/20 text-sm font-medium transition-all bg-white cursor-pointer">
+                <option value="1 người (Đi một mình)">1 người (Khám phá solo)</option>
+                <option value="2 người (Cặp đôi/Bạn bè)" selected>2 người (Cặp đôi / Bạn bè)</option>
+                <option value="3 - 5 người (Gia đình/Nhóm nhỏ)">3 - 5 người (Gia đình / Nhóm nhỏ)</option>
+                <option value="6 - 10 người (Nhóm bạn)">6 - 10 người (Nhóm bạn)</option>
+                <option value="Đoàn trên 10 người (Công ty/Tổ chức)">Đoàn trên 10 người (Công ty / Tổ chức)</option>
+              </select>
+            </div>
+
+            <!-- Field: Thời gian dự kiến -->
+            <div>
+              <label for="form-date" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">
+                Thời gian khởi hành dự kiến
+              </label>
+              <input type="date" id="form-date" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-tua-ocean focus:ring-2 focus:ring-tua-ocean/20 text-sm font-medium transition-all bg-white">
+            </div>
+          </div>
+
+          <!-- Field: Nội dung cần tư vấn -->
+          <div>
+            <label for="form-note" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">
+              Nội dung cần tư vấn (Ngân sách, yêu cầu riêng...)
+            </label>
+            <textarea id="form-note" rows="3" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-tua-ocean focus:ring-2 focus:ring-tua-ocean/20 text-sm font-medium transition-all resize-none" placeholder="Ví dụ: Cần phòng resort gần biển, có phụ thu trẻ em không, muốn đi vào cuối tuần..."></textarea>
+          </div>
+
+          <!-- CTA Button (Exact Required Text) -->
+          <div class="pt-2">
+            <button type="submit" id="btn-submit-consultation" class="w-full py-4 px-6 bg-gradient-to-r from-tua-ocean via-cyan-500 to-tua-navy hover:from-cyan-500 hover:to-tua-ocean text-white font-heading font-black text-sm sm:text-base uppercase tracking-wider rounded-xl shadow-xl glow-primary transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer">
+              <i class="fa-solid fa-paper-plane mr-2"></i> ĐĂNG KÝ TƯ VẤN NGAY
+            </button>
+            <p class="text-[11px] text-center text-slate-400 mt-2.5">
+              <i class="fa-solid fa-lock text-emerald-500 mr-1"></i> Thông tin của bạn được bảo mật tuyệt đối 100% theo chính sách TUATRAVEL.
+            </p>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- FAQ ACCORDION (CÂU HỎI THƯỜNG GẶP - TRUST & SOCIAL PROOF)                  -->
+  <!-- ========================================================================= -->
+  <section id="faq" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 text-tua-ocean font-bold text-xs uppercase tracking-widest bg-tua-sky px-3 py-1 rounded-full mb-3">
+          <i class="fa-solid fa-circle-question"></i> Giải đáp thắc mắc
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-heading font-black text-slate-900 tracking-tight uppercase">
+          CÂU HỎI THƯỜNG GẶP (FAQ)
+        </h2>
+        <p class="text-slate-500 text-sm mt-2">Mọi thông tin cần biết trước khi khởi hành cùng TUATRAVEL.</p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- FAQ 1 -->
+        <div class="faq-accordion-item accordion-item bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden transition-all">
+          <button class="faq-header w-full px-6 py-4 text-left flex items-center justify-between font-bold text-slate-900 text-sm sm:text-base hover:text-tua-ocean transition-colors cursor-pointer">
+            <span>1. Đặt tour tại TUATRAVEL cần đặt cọc trước bao nhiêu phần trăm?</span>
+            <span class="faq-icon accordion-icon text-tua-ocean transition-transform duration-300"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-content accordion-content px-6 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
+            Đối với các tour đường bộ (Sa Pa, Ninh Bình, Miền Tây), quý khách chỉ cần đặt cọc trước 30% - 50% tổng chi phí để giữ chỗ dịch vụ. Với các tour có vé máy bay (Phú Quốc, Nha Trang), tiền vé máy bay và 50% tiền dịch vụ mặt đất sẽ được thanh toán khi xuất vé. Số tiền còn lại quý khách có thể thanh toán trước khi khởi hành từ 3-5 ngày hoặc theo thỏa thuận cụ thể.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-accordion-item accordion-item bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden transition-all">
+          <button class="faq-header w-full px-6 py-4 text-left flex items-center justify-between font-bold text-slate-900 text-sm sm:text-base hover:text-tua-ocean transition-colors cursor-pointer">
+            <span>2. Nếu bận đột xuất, tôi có được dời ngày khởi hành hoặc hủy tour không?</span>
+            <span class="faq-icon accordion-icon text-tua-ocean transition-transform duration-300"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-content accordion-content px-6 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
+            TUATRAVEL hỗ trợ dời ngày khởi hành miễn phí nếu thông báo trước 10 - 15 ngày (tùy vào điều kiện của hãng bay và phòng khách sạn đã đặt). Trong các trường hợp bất khả kháng do thiên tai hoặc dịch bệnh, TUATRAVEL cam kết bảo lưu tiền cọc hoặc hoàn trả tối đa chi phí theo chính sách minh bạch.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-accordion-item accordion-item bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden transition-all">
+          <button class="faq-header w-full px-6 py-4 text-left flex items-center justify-between font-bold text-slate-900 text-sm sm:text-base hover:text-tua-ocean transition-colors cursor-pointer">
+            <span>3. Giá tour đã bao gồm những gì? Có phát sinh phụ phí mua sắm không?</span>
+            <span class="faq-icon accordion-icon text-tua-ocean transition-transform duration-300"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-content accordion-content px-6 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
+            Giá tour tại TUATRAVEL là giá TRỌN GÓI MINH BẠCH, bao gồm: xe đưa đón đời mới, phòng khách sạn/resort tiêu chuẩn, các bữa ăn đặc sản theo chương trình, vé tham quan danh thắng, bảo hiểm du lịch 100.000.000 đ/người và hướng dẫn viên nhiệt tình. Cam kết 100% không phát sinh phụ phí ẩn hoặc ép buộc mua sắm tại các điểm du lịch.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-accordion-item accordion-item bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden transition-all">
+          <button class="faq-header w-full px-6 py-4 text-left flex items-center justify-between font-bold text-slate-900 text-sm sm:text-base hover:text-tua-ocean transition-colors cursor-pointer">
+            <span>4. Trẻ em đi cùng bố mẹ được tính giá như thế nào?</span>
+            <span class="faq-icon accordion-icon text-tua-ocean transition-transform duration-300"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-content accordion-content px-6 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
+            • Trẻ em dưới 5 tuổi: Miễn phí giá tour (bố mẹ tự lo chi phí ăn uống, vé phát sinh nếu có).<br>
+            • Trẻ em từ 5 - dưới 10 tuổi: Tính 75% giá tour người lớn (có suất ăn riêng, ghế ngồi riêng trên xe, ngủ chung giường cùng bố mẹ).<br>
+            • Trẻ em từ 10 tuổi trở lên: Tính như người lớn. Riêng vé máy bay sẽ tính theo quy định của từng hãng bay.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-accordion-item accordion-item bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden transition-all">
+          <button class="faq-header w-full px-6 py-4 text-left flex items-center justify-between font-bold text-slate-900 text-sm sm:text-base hover:text-tua-ocean transition-colors cursor-pointer">
+            <span>5. TUATRAVEL có hỗ trợ xuất hóa đơn VAT điện tử cho cơ quan, doanh nghiệp không?</span>
+            <span class="faq-icon accordion-icon text-tua-ocean transition-transform duration-300"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-content accordion-content px-6 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
+            Có. TUATRAVEL cung cấp đầy đủ hợp đồng du lịch, biên bản thanh lý và xuất hóa đơn giá trị gia tăng (VAT) hợp lệ điện tử gửi qua email ngay sau khi chuyến đi hoàn tất.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- KHỐI 5: FOOTER & TRUST – REASSURANCE (MÔ HÌNH 5 KHỐI VÀNG)                 -->
+  <!-- ========================================================================= -->
+  <footer id="contact" class="bg-slate-950 text-slate-300 pt-16 pb-8 border-t border-slate-800 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Top Brand Statement (Exact Required Text) -->
+      <div class="pb-12 border-b border-slate-800/80 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-xl bg-white p-1 border border-tua-ocean/40 flex items-center justify-center overflow-hidden">
+              <img src="assets/images/logo.jpg" alt="TUATRAVEL Logo" class="w-full h-full object-contain">
+            </div>
+            <div>
+              <span class="font-heading font-black text-2xl text-white tracking-wider">TUATRAVEL</span>
+              <span class="block text-xs text-cyan-400 font-semibold uppercase tracking-widest">
+                CHẠM HÀNH TRÌNH – TRỌN CẢM XÚC!
+              </span>
+            </div>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-white mb-2">
+            TUATRAVEL – CHẠM HÀNH TRÌNH, TRỌN TRẢI NGHIỆM!
+          </h3>
+          <p class="text-slate-400 text-sm max-w-2xl leading-relaxed">
+            Cùng TUATRAVEL khám phá vẻ đẹp Việt Nam và tạo nên những kỷ niệm đáng nhớ qua từng chuyến đi. Đưa khách hàng đến gần hơn với những cảnh đẹp, văn hóa và trải nghiệm đặc sắc của Việt Nam.
+          </p>
+        </div>
+
+        <!-- Social Media Channels (Exact Links & Requirement) -->
+        <div class="lg:col-span-5 flex flex-col sm:items-end gap-3">
+          <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Kết nối cùng chúng tôi trên mạng xã hội</span>
+          <div class="flex items-center gap-3">
+            <!-- Official Facebook (Exact Link) -->
+            <a href="https://www.facebook.com/profile.php?id=61595139944004" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-blue-600 hover:bg-blue-500 text-white flex items-center justify-center transition-transform hover:scale-110 shadow-lg" title="Fanpage Facebook TUATRAVEL">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <!-- TikTok giả định theo yêu cầu -->
+            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-slate-800 hover:bg-slate-700 text-white flex items-center justify-center transition-transform hover:scale-110 shadow-lg border border-slate-700" title="Kênh TikTok TUATRAVEL">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <!-- YouTube -->
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-red-600 hover:bg-red-500 text-white flex items-center justify-center transition-transform hover:scale-110 shadow-lg" title="Kênh YouTube TUATRAVEL">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <!-- Zalo Chat -->
+            <a href="https://zalo.me" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-cyan-600 hover:bg-cyan-500 text-white flex items-center justify-center text-xs font-bold transition-transform hover:scale-110 shadow-lg" title="Chat Zalo hỗ trợ">
+              Zalo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Footer Information Grid (Exact Required Data) -->
+      <div class="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
+        
+        <!-- Column 1: Thông tin liên hệ -->
+        <div>
+          <h4 class="font-heading font-bold text-white text-base mb-4 uppercase tracking-wider border-l-2 border-tua-ocean pl-2.5">
+            Thông tin liên hệ
+          </h4>
+          <ul class="space-y-3 text-slate-300">
+            <li class="flex items-start gap-2.5">
+              <span class="text-tua-ocean mt-1"><i class="fa-solid fa-location-dot"></i></span>
+              <span><strong>Địa chỉ:</strong> [123 đường Võ Thị Sáu, Thành phố Đồng Nai]</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="text-tua-ocean"><i class="fa-solid fa-phone"></i></span>
+              <span><strong>Hotline:</strong> <a href="tel:19001234" class="text-cyan-300 hover:underline font-bold">[1900 1234]</a></span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="text-tua-ocean"><i class="fa-solid fa-envelope"></i></span>
+              <span><strong>Email:</strong> <a href="mailto:TUATRAVEL@gmail.com" class="hover:text-white">[TUATRAVEL@gmail.com]</a></span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="text-tua-ocean"><i class="fa-solid fa-globe"></i></span>
+              <span><strong>Website:</strong> [TUATRAVEL BY ZEN]</span>
+            </li>
+            <li class="flex items-center gap-2.5 text-xs text-slate-400 pt-1">
+              <span class="text-emerald-400"><i class="fa-solid fa-clock"></i></span>
+              <span>Thời gian làm việc: 08:00 - 21:00 (Thứ 2 - CN)</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Khám phá điểm đến -->
+        <div>
+          <h4 class="font-heading font-bold text-white text-base mb-4 uppercase tracking-wider border-l-2 border-tua-ocean pl-2.5">
+            Tuyến tour đặc sắc
+          </h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="#tours" class="hover:text-cyan-300 transition-colors">Tour Phú Quốc 3N2Đ - Sunset Town</a></li>
+            <li><a href="#tours" class="hover:text-cyan-300 transition-colors">Tour Sa Pa 3N2Đ - Chinh phục Fansipan</a></li>
+            <li><a href="#tours" class="hover:text-cyan-300 transition-colors">Tour Tràng An - Ninh Bình 2N1Đ</a></li>
+            <li><a href="#tours" class="hover:text-cyan-300 transition-colors">Tour Bến Tre - Miền Tây Sông Nước 2N1Đ</a></li>
+            <li><a href="#tours" class="hover:text-cyan-300 transition-colors">Tour Đà Nẵng - Hội An - Bà Nà Hills</a></li>
+            <li><a href="#tours" class="hover:text-cyan-300 transition-colors">Tour Đà Lạt ngắm hoa & săn mây</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Các liên kết chính sách (Exact Required Links) -->
+        <div>
+          <h4 class="font-heading font-bold text-white text-base mb-4 uppercase tracking-wider border-l-2 border-tua-ocean pl-2.5">
+            Chính sách & Quy định
+          </h4>
+          <ul class="space-y-2 text-slate-400">
+            <li>
+              <a href="#" class="policy-link hover:text-cyan-300 transition-colors flex items-center gap-1.5" data-policy="booking-policy">
+                <i class="fa-solid fa-angle-right text-xs text-tua-ocean"></i> Chính sách đặt tour
+              </a>
+            </li>
+            <li>
+              <a href="#" class="policy-link hover:text-cyan-300 transition-colors flex items-center gap-1.5" data-policy="payment-policy">
+                <i class="fa-solid fa-angle-right text-xs text-tua-ocean"></i> Chính sách thanh toán
+              </a>
+            </li>
+            <li>
+              <a href="#" class="policy-link hover:text-cyan-300 transition-colors flex items-center gap-1.5" data-policy="cancellation-policy">
+                <i class="fa-solid fa-angle-right text-xs text-tua-ocean"></i> Chính sách hủy và hoàn tour
+              </a>
+            </li>
+            <li>
+              <a href="#" class="policy-link hover:text-cyan-300 transition-colors flex items-center gap-1.5" data-policy="terms-policy">
+                <i class="fa-solid fa-angle-right text-xs text-tua-ocean"></i> Điều khoản sử dụng
+              </a>
+            </li>
+            <li>
+              <a href="#" class="policy-link hover:text-cyan-300 transition-colors flex items-center gap-1.5" data-policy="privacy-policy">
+                <i class="fa-solid fa-angle-right text-xs text-tua-ocean"></i> Chính sách bảo mật thông tin
+              </a>
+            </li>
+            <li class="pt-2 text-xs text-slate-500 italic">
+              * Thông tin doanh nghiệp: Theo tình trạng pháp lý thực tế [Đang hoàn thiện hồ sơ lữ hành nội địa]
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter & Cam kết an tâm -->
+        <div>
+          <h4 class="font-heading font-bold text-white text-base mb-4 uppercase tracking-wider border-l-2 border-tua-ocean pl-2.5">
+            Cam kết chất lượng
+          </h4>
+          <p class="text-xs text-slate-400 leading-relaxed mb-4">
+            TUATRAVEL cam kết mang đến những chuyến đi đậm chất trẻ trung, dịch vụ chu đáo và kỷ niệm khó quên.
+          </p>
+          <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 space-y-2 text-xs">
+            <div class="flex items-center gap-2 text-cyan-300">
+              <i class="fa-solid fa-circle-check"></i> Lịch trình thực tế, minh bạch giá
+            </div>
+            <div class="flex items-center gap-2 text-cyan-300">
+              <i class="fa-solid fa-circle-check"></i> Hỗ trợ tư vấn khách hàng 24/7
+            </div>
+            <div class="flex items-center gap-2 text-cyan-300">
+              <i class="fa-solid fa-circle-check"></i> Bảo hiểm toàn diện chuyến đi
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bar -->
+      <div class="pt-8 mt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <div>
+          © 2024 - 2026 <strong class="text-white">TUATRAVEL</strong>. Bản quyền thuộc về TUATRAVEL BY ZEN. All rights reserved.
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="#" class="policy-link hover:text-slate-300" data-policy="privacy-policy">Bảo mật</a>
+          <span>•</span>
+          <a href="#" class="policy-link hover:text-slate-300" data-policy="terms-policy">Điều khoản</a>
+          <span>•</span>
+          <a href="#faq" class="hover:text-slate-300">FAQ</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ========================================================================= -->
+  <!-- FLOATING QUICK CONTACT BAR (PHONE, FACEBOOK, ZALO, SCROLL-TOP)            -->
+  <!-- ========================================================================= -->
+  <aside class="fixed bottom-6 right-6 z-40 flex flex-col items-center gap-3">
+    
+    <!-- Quick Call Hotline -->
+    <a href="tel:19001234" class="group relative w-12 h-12 rounded-full bg-rose-500 hover:bg-rose-600 text-white flex items-center justify-center shadow-2xl transition-transform hover:scale-110 animate-pulse-ring cursor-pointer" aria-label="Gọi hotline 1900 1234">
+      <i class="fa-solid fa-phone text-base"></i>
+      <span class="absolute right-14 bg-slate-900 text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+        Hotline: 1900 1234
+      </span>
+    </a>
+
+    <!-- Quick Facebook Messenger / Fanpage -->
+    <a href="https://www.facebook.com/profile.php?id=61595139944004" target="_blank" rel="noopener noreferrer" class="group relative w-12 h-12 rounded-full bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center shadow-xl transition-transform hover:scale-110 cursor-pointer" aria-label="Nhắn tin Facebook TUATRAVEL">
+      <i class="fa-brands fa-facebook-messenger text-lg"></i>
+      <span class="absolute right-14 bg-slate-900 text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+        Nhắn Facebook TUATRAVEL
+      </span>
+    </a>
+
+    <!-- Quick Zalo Chat -->
+    <a href="https://zalo.me" target="_blank" rel="noopener noreferrer" class="group relative w-12 h-12 rounded-full bg-tua-ocean hover:bg-cyan-600 text-white flex items-center justify-center shadow-xl transition-transform hover:scale-110 cursor-pointer font-bold text-xs" aria-label="Chat Zalo tư vấn">
+      <span>Zalo</span>
+      <span class="absolute right-14 bg-slate-900 text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+        Chat Zalo trực tiếp
+      </span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top-btn" class="w-10 h-10 rounded-full bg-slate-900/80 hover:bg-slate-900 text-white flex items-center justify-center shadow-lg opacity-0 pointer-events-none translate-y-4 transition-all duration-300 cursor-pointer" aria-label="Cuộn lên đầu trang">
+      <i class="fa-solid fa-arrow-up text-sm"></i>
+    </button>
+
+  </aside>
+
+
+  <!-- ========================================================================= -->
+  <!-- INTERACTIVE MODAL 1: CHI TIẾT TOUR LỊCH TRÌNH                             -->
+  <!-- ========================================================================= -->
+  <div id="tour-detail-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-3 sm:p-6 overflow-y-auto">
+    <div id="tour-modal-backdrop" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm transition-opacity"></div>
+    
+    <div class="relative bg-white w-full max-w-4xl rounded-3xl shadow-2xl overflow-hidden z-10 my-auto max-h-[92vh] flex flex-col">
+      
+      <!-- Modal Header Bar -->
+      <div class="flex items-center justify-between p-4 sm:p-6 border-b border-slate-100 bg-slate-50/80">
+        <div class="flex items-center gap-2">
+          <span class="w-8 h-8 rounded-lg bg-cyan-100 text-tua-ocean flex items-center justify-center text-sm font-bold">
+            <i class="fa-solid fa-map"></i>
+          </span>
+          <h3 class="font-heading font-black text-slate-900 text-base sm:text-xl">Chi Tiết Lịch Trình Tour</h3>
+        </div>
+        <button id="close-tour-modal" class="w-9 h-9 rounded-full bg-white hover:bg-slate-200 text-slate-500 hover:text-slate-800 flex items-center justify-center text-sm transition-colors border border-slate-200">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body (Scrollable) -->
+      <div class="p-5 sm:p-8 overflow-y-auto space-y-6 text-sm">
+        
+        <!-- Hero in modal -->
+        <div class="relative h-60 sm:h-72 rounded-2xl overflow-hidden shadow-inner">
+          <img id="modal-tour-img" src="" alt="Hình ảnh tour" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-4 left-4 right-4 text-white">
+            <span id="modal-tour-dest" class="text-xs text-cyan-300 font-semibold uppercase tracking-wider block mb-1"></span>
+            <h4 id="modal-tour-title" class="font-heading font-black text-lg sm:text-2xl leading-tight"></h4>
+          </div>
+        </div>
+
+        <!-- Meta strip -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 p-4 bg-slate-50 rounded-2xl border border-slate-100 text-xs">
+          <div>
+            <span class="text-slate-400 block font-medium">Thời lượng:</span>
+            <strong id="modal-tour-duration" class="text-slate-800 text-sm"></strong>
+          </div>
+          <div>
+            <span class="text-slate-400 block font-medium">Phương tiện:</span>
+            <strong id="modal-tour-transport" class="text-slate-800 text-sm"></strong>
+          </div>
+          <div>
+            <span class="text-slate-400 block font-medium">Lưu trú:</span>
+            <strong id="modal-tour-hotel" class="text-slate-800 text-sm"></strong>
+          </div>
+          <div>
+            <span class="text-slate-400 block font-medium">Giá ưu đãi:</span>
+            <span class="flex items-baseline gap-1.5">
+              <strong id="modal-tour-price" class="text-tua-ocean font-black text-sm"></strong>
+              <span id="modal-tour-price-old" class="line-through text-slate-400 text-[10px]"></span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Overview -->
+        <div>
+          <h5 class="font-bold text-slate-900 text-sm uppercase tracking-wider mb-2 text-tua-ocean">
+            <i class="fa-solid fa-align-left mr-1"></i> Tổng quan chuyến đi
+          </h5>
+          <p id="modal-tour-overview" class="text-slate-600 leading-relaxed"></p>
+        </div>
+
+        <!-- Highlights -->
+        <div>
+          <h5 class="font-bold text-slate-900 text-sm uppercase tracking-wider mb-3 text-tua-ocean">
+            <i class="fa-solid fa-star mr-1"></i> Điểm nhấn hành trình nổi bật
+          </h5>
+          <ul id="modal-tour-highlights" class="space-y-2"></ul>
+        </div>
+
+        <!-- Day by day Itinerary -->
+        <div>
+          <h5 class="font-bold text-slate-900 text-sm uppercase tracking-wider mb-4 text-tua-ocean">
+            <i class="fa-solid fa-calendar-day mr-1"></i> Lịch trình chi tiết từng ngày
+          </h5>
+          <div id="modal-tour-itinerary" class="space-y-4"></div>
+        </div>
+
+        <!-- Included services -->
+        <div class="bg-cyan-50/60 p-4 sm:p-5 rounded-2xl border border-cyan-100">
+          <h5 class="font-bold text-slate-900 text-sm uppercase tracking-wider mb-2 text-cyan-800">
+            <i class="fa-solid fa-shield-halved mr-1 text-emerald-600"></i> Tiêu chuẩn dịch vụ đã bao gồm
+          </h5>
+          <ul id="modal-tour-included" class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2"></ul>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer Action -->
+      <div class="p-4 sm:p-6 bg-slate-50 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div class="text-xs text-slate-500">
+          <i class="fa-solid fa-phone text-tua-ocean mr-1"></i> Tư vấn miễn phí 24/7 qua hotline: <strong>1900 1234</strong>
+        </div>
+        <button id="modal-book-tour-btn" class="w-full sm:w-auto px-7 py-3 bg-gradient-to-r from-tua-ocean to-cyan-600 hover:from-cyan-600 hover:to-tua-ocean text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-md transition-all">
+          <i class="fa-solid fa-paper-plane mr-1.5"></i> Đặt tư vấn tour này ngay
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ========================================================================= -->
+  <!-- INTERACTIVE MODAL 2: THÔNG BÁO TIẾP NHẬN YÊU CẦU TƯ VẤN THÀNH CÔNG       -->
+  <!-- ========================================================================= -->
+  <div id="form-feedback-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4">
+    <div id="feedback-modal-backdrop" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm"></div>
+
+    <div class="relative bg-white max-w-md w-full rounded-3xl p-6 sm:p-8 text-center shadow-2xl z-10 border border-slate-100 animate-float">
+      
+      <!-- Success Icon -->
+      <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-3xl mx-auto mb-4 animate-bounce">
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+
+      <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest bg-emerald-50 px-3 py-1 rounded-full">
+        Xác nhận tiếp nhận thông tin
+      </span>
+
+      <h4 class="font-heading font-black text-slate-900 text-xl sm:text-2xl mt-3 uppercase">
+        GỬI YÊU CẦU THÀNH CÔNG!
+      </h4>
+
+      <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+        Cảm ơn bạn <strong id="feedback-client-name" class="text-slate-900"></strong> đã tin chọn <strong class="text-tua-ocean">TUATRAVEL</strong>. Chúng tôi đã nhận được thông tin đăng ký tư vấn điểm đến <strong id="feedback-client-dest" class="text-tua-ocean"></strong>.
+      </p>
+
+      <!-- Details Box -->
+      <div class="my-5 p-4 bg-slate-50 rounded-2xl border border-slate-200 text-left text-xs space-y-1.5">
+        <div class="flex justify-between">
+          <span class="text-slate-500">Mã yêu cầu tư vấn:</span>
+          <strong id="feedback-inquiry-code" class="text-cyan-700 font-mono font-bold"></strong>
+        </div>
+        <div class="flex justify-between">
+          <span class="text-slate-500">Số điện thoại tiếp nhận:</span>
+          <strong id="feedback-client-phone" class="text-slate-800"></strong>
+        </div>
+        <div class="flex justify-between">
+          <span class="text-slate-500">Thời gian phản hồi dự kiến:</span>
+          <strong class="text-emerald-600 font-bold">Trong vòng 15 phút</strong>
+        </div>
+      </div>
+
+      <p class="text-xs text-slate-400 mb-6 italic">
+        Chuyên viên tư vấn TUATRAVEL sẽ gọi điện thoại hoặc gửi lịch trình chi tiết qua Zalo/Email cho bạn ngay.
+      </p>
+
+      <button id="close-feedback-modal" class="w-full py-3.5 px-6 bg-tua-navy hover:bg-tua-ocean text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-md transition-colors cursor-pointer">
+        Đã hiểu và hoàn tất
+      </button>
+
+    </div>
+  </div>
+
+
+  <!-- ========================================================================= -->
+  <!-- INTERACTIVE MODAL 3: XEM CHÍNH SÁCH VÀ ĐIỀU KHOẢN                         -->
+  <!-- ========================================================================= -->
+  <div id="policy-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4">
+    <div id="policy-modal-backdrop" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm"></div>
+
+    <div class="relative bg-white max-w-2xl w-full rounded-3xl p-6 sm:p-8 shadow-2xl z-10 max-h-[85vh] flex flex-col">
+      <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+        <h3 id="policy-modal-title" class="font-heading font-black text-slate-900 text-lg sm:text-xl"></h3>
+        <button id="close-policy-modal" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center text-sm transition-colors">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div id="policy-modal-body" class="py-6 overflow-y-auto text-sm text-slate-600 space-y-4"></div>
+
+      <div class="pt-4 border-t border-slate-100 text-right">
+        <button onclick="document.getElementById('policy-modal').classList.add('hidden'); document.getElementById('policy-modal').classList.remove('flex'); document.body.style.overflow = '';" class="px-5 py-2.5 bg-slate-800 hover:bg-slate-900 text-white font-bold text-xs rounded-xl">
+          Đóng cửa sổ
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
